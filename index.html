@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>What type of music do you like?</h2>
+    <h3>Binge Listening to the same song over and over makes me happy.</h3>
+    <p>Here is my fav song these days.</p>
+    <p>
+      Click the button if you wanna know it and start to listen it every single
+      day.
+    </p>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/QQ3iJu79ZL0?si=jk9fndd8kEhUO_K3"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <p id="demo"></p>
+    <button onclick="myFunction()">NOT PLAYING VIDEO?</button>
+    <a href="https://youtu.be/lwhyT03_OG4?si=0P90JOH5QVFf2DH_">click here.</a>
+
+    <script>
+      function myFunction() {
+        let song = prompt("Band & Song.", "Almost Monday- Cough Drops.");
+        if (song != null) {
+          document.getElementById("demo").innerHTML =
+            song + "🎧 Check the link below.";
+        }
+      }
+    </script>
+  </body>
+</html>
